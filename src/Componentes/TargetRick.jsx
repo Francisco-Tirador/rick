@@ -1,21 +1,13 @@
 import React from 'react'
 import CharacterInfo from './CharacterInfo'
-import useApi from './CustomHuks/useApi'
-// import useReco from './CustomHuks/useReco'
 
-
-
-const TargetRick = () => {
-
-
-const {Character,Loand,e,text}=useApi()
+const TargetRick = ({Character,e }) => {
 
 const tol=Character?.residents?.length
 
 
-// const {e}=useReco()
-// const retorno=e
-console.log(text)
+ 
+ 
 
 
 
@@ -33,10 +25,8 @@ return (
    {
           e?.map(Character=>(
             <CharacterInfo
-            Character={Character}
-            URL={Character}
-            
-
+            Character={Character.link}
+            key={Character.id}
             />
           ))
         }

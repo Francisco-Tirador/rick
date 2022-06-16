@@ -20,7 +20,7 @@ const CharacterInfo = ({Character}) => {
     )
   }, [])
   
- 
+// console.log(Character)
   return (
     <div className='individual'>
 <img className='imgIndividual' src={URL?.image} alt="" />
@@ -31,7 +31,7 @@ const CharacterInfo = ({Character}) => {
     <div className='textInd'>
     <ul><b>Origin  </b>{URL?.origin.name}</ul>
     <ul><b>Episodes where apper  </b>{URL?.episode.length}</ul>
-    <ul><b></b></ul>
+    <ul><b>id   </b> {URL?.id}</ul>
     
     </div>
     

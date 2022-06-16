@@ -6,11 +6,9 @@ import axios from 'axios'
 
 
 const useApi = () => {
- 
- let lo=1
-    const [text, settext] = useState(lo)
+ let camb="4"
+    const [text, settext] = useState(camb)
 
-  
     const setTExt=e=>{
      e.preventDefault()
      settext(e.target.children[0].value)
@@ -22,16 +20,16 @@ const useApi = () => {
 
     const id=Math.floor(Math.random()*126)
    
-    const la=`https://rickandmortyapi.com/api/location/${text}`
+    const la=`https://rickandmortyapi.com/api/location/${camb}`
 useEffect(() => {
-    let URL=`https://rickandmortyapi.com/api/location/${text}`
+    let URL=`https://rickandmortyapi.com/api/location/${camb}`
 axios.get(URL)
     .then(api=>{setCharacter(api?.data)
         // setLoand(false)
      })
 }, [])
 
-
+console.log(Character)
 
 console.log(text)
 let e =[]
