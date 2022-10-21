@@ -12,15 +12,84 @@ code {
     monospace;
 }
 
-@media (max-width:700px) {
+@media (max-width:800px) {
 .individual{
- 
-  font-weight:lighter;
-  width:65%;
+  width: 200px;
+  height: 350px;
 }  
+.Face{
+  width: 200px;
+  height: 350px;
+}
+.imgIndividual{
+  width: 200px;
+  height: 350px;
+}
+.Information{
 
-.individual h2{
-  color: steelblue;
-  font-weight: 500;
+  padding: 10%;
+  margin: 0;
+  width: 100%;
+}
+.Information b{
+  display: block;
+  font-size: 18px;
+ 
+}
+.Information p{
+  text-align: end;
+  color: rgb(19, 19, 19);
+}
+.Form{
+  background-color: rgb(179, 109, 233);
+  padding: 30px;
 }
 }
+@media (max-width:600px) {
+  .individual{
+    width: 150px;
+    height: 250px;
+  }  
+  .Face{
+    width: 150px;
+    height: 250px;
+  }
+  .imgIndividual{
+    width: 150px;
+    height: 250px;
+  }
+  
+  .Information b{
+    display: block;
+    font-size: 11px;
+   
+  }
+  .Form input{
+    width: 100px;
+    border-radius: 20px;
+    height:40px;
+    text-align: center;
+  }
+  .dimencionLista{
+    justify-content: start;
+
+  }
+ 
+  }
+  @media (max-width:500px){
+    .dimencionLista{
+     font-size: 10px;
+    }
+    ul{
+      padding: 0px;
+    }
+    .Form input{
+      width: 100px;
+      border-radius: 20px;
+      height:15px;
+      text-align: center;
+    }
+    .Form{
+      padding: 20px;
+    }
+  }

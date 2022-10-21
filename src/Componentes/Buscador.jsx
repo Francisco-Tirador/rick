@@ -1,16 +1,19 @@
 import React from 'react'
+import {useDispatch}from 'react-redux'
+import { newId } from '../store/slice/dimencion.slice'
+const Buscador = () => {
 
-const Buscador = ({ setTExt,text,getApi}) => {
-
+const dispach=useDispatch()
+const newValor=e=>{
+    e.preventDefault()
+    dispach(newId(e.target.children[0].value))
+}
   return (
-    <div>
-<form onSubmit={setTExt} action="">
-        <input type="number"/>
-    
-        <button onClick={getApi}>Hola yo cambiare el valor</button>
-    <h3>{text}</h3>
+    <div className='Form'>
+    <form onSubmit={newValor} >
+        <input type="number" max={126}min={1} placeholder='Number dimencion'/>
+       <button>BUSCAR</button>
     </form>
-    <h3>{text}</h3>
     </div>
   ) 
 }

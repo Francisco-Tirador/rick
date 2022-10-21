@@ -10,62 +10,170 @@ ul{
   text-align: center;
   padding-bottom: 10%;
 }
-
+.ImaHead{
+  position: relative;
+}
 .imgPrincipal{
   width: 100%;
+  
+  z-index: 20;
+  
+}
+.Form{
+  background-color: rgb(179, 109, 233);
+  padding: 60px;
+}
+.Form input{
+  width: 300px;
+  border-radius: 20px;
+  height:40px;
+  text-align: center;
+}
+
+
+.dimencionLista{
+  position: sticky;
+  top: 20px;
+  height: 130px;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgb(2, 44, 80);
+  font-size: 20px;
+  z-index: 10;
+  font-weight: 900;
+  padding:0 30px 0 30px;
+}
+.dimencionLista b{
+  color: rgb(232, 227, 227);
+}
+ul{
+  color: black;
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
+
+.circleStatus{
+ margin:10px 10px;
+  display:inline-block;
+  width: 20px;
+  height:20px;
+  border-radius: 50%;
+}
+.statusLive{
+  background-color: greenyellow;
+}
+.statusDead{
+  background-color: red;
+}
+.statusUnknown{
+  background-color: yellow;
+}
+
+.contentarget{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: yellowgreen;
+  border-radius: 40px 40px 0 0;
 }
 
 .targetRicks{
+  
   width: 80%;
 display: inline-block;
   background-color:rgb(38, 38, 38);
   border-radius:10px;
   text-align: center;
 }
-
-.contentarget{
-  background-color: yellowgreen;
-border-top-left-radius:50px ;
- border-top-right-radius: 50px;
+.individual{
+ border-radius: 30px;
+  position: relative;
+width: 300px;
+  height: 450px;
+  margin: 20px;
+ 
 }
 
-/* .dimencionLista{
-  
-} */
+.Face{
+  border-radius: 30px;
+  background-color: rgb(39, 39, 39);
+  width: 300px;
+  height: 450px;
+  overflow: hidden;
+  position: absolute;
+   transition: 0.5s;
+  backface-visibility: hidden;
+}
 
-.individual{
-  width:25%;
-  background-color: rgb(77, 77, 77);
-  display:inline-block;
-  margin:1%;
-  padding:10px;
-  border-radius: 10px;
+.Front{
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  transform:perspective(800) rotateY(90deg);
+  box-shadow: 30px 20px 30px black;
 }
 .imgIndividual{
-  width: 80%;
+  width: 350px;
+  height: 450px;
 }
-.textInd{
+.status{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.585);
   text-align: start;
+  padding-left:40px ;
+}
+.Front h3{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.585);
+  text-align: center;
+  
+}
+.Back{
+  position: absolute;
+  transform:perspective(800) rotateY(25deg);
+  background-color: rgb(42, 42, 42);
+  box-shadow: 30px 20px 30px black;
+}
+.Information{
+  width: 200px;
+  margin-left: 10%;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 30px;
+  text-align: start;
+  background-color: rgba(150, 255, 2, 0.226);
+}
+.Information b{
+  display: block;
+  font-size: 20px;
+}
+.Information p{
+  text-align: end;
+  color: rgb(19, 19, 19);
 }
 
-.contenStatus{
- 
-  display: flex;
-  width: 80%;
-  margin-left: 15%;
- 
+.individual:hover .Front{
+  transform: perspective(800px) rotateY(180deg);
+
 }
-p{ position: relative;
-  
-  display: inline-block;
+.individual:hover .Back{
+  transform: perspective(800px) rotateY(360deg);
 }
-.circleStatus{
-  position: absolute;
-  top:30%;
-  right: -100%;
-  display:inline-block;
-  background-color: greenyellow;
-  width: 10px;
-  height:10px;
-  border-radius: 50%;
+.Back h2{
+  background-color: rgb(30, 227, 5);
 }
