@@ -2,6 +2,7 @@
 import './App.css'
 import TargetRick from './Componentes/TargetRick'
 import Buscador from './Componentes/Buscador'
+import Footer from './Componentes/Footer'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <div><img className='imgPrincipal' src="https://areajugones.sport.es/wp-content/uploads/2019/11/Rick.jpg.webp" alt="" /></div>
       <Buscador />
       <TargetRick  />
+      
     </div>
   )
 }

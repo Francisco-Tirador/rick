@@ -10,6 +10,24 @@ ul{
   text-align: center;
   padding-bottom: 10%;
 }
+
+.Footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  text-align: center;
+  color: wheat;
+  z-index: 100;
+
+  bottom: 0;
+}
+.Footer img {
+  width: 25px;
+  margin: 0 10px;
+}
+
+
 .ImaHead{
   position: relative;
 }
